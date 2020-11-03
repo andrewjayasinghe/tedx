@@ -1,0 +1,48 @@
+CREATE TABLE `musician`.`ordering_table` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `gift` VARCHAR(255) NOT NULL,
+  `occasion` VARCHAR(255) NOT NULL,
+  `type` VARCHAR(255) NOT NULL,
+  `number_musicians` VARCHAR(255) NOT NULL,
+  `suprise` VARCHAR(255) NOT NULL,
+  `firstName` VARCHAR(255) NOT NULL,
+  `lastName` VARCHAR(255) NOT NULL,
+  `date_service` DATETIME NOT NULL,
+  `time_service` VARCHAR(45) NOT NULL,
+  `offered` VARCHAR(45) NOT NULL,
+  `number` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `address` VARCHAR(255) NOT NULL,
+  `address_2` VARCHAR(255) NOT NULL,
+  `city` VARCHAR(255) NOT NULL,
+  `state` VARCHAR(255) NOT NULL,
+  `zip` VARCHAR(255) NOT NULL,
+  `comments` VARCHAR(255) NOT NULL,
+  `tip` FLOAT NULL,
+  PRIMARY KEY (`id`));
+
+
+
+CREATE TABLE `musician`.`users` (
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(255) NOT NULL);
+
+
+CREATE TABLE `musician`.`musician_table` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `firstName` VARCHAR(255) NOT NULL,
+  `lastName` VARCHAR(255) NOT NULL,
+  `address` VARCHAR(255) NOT NULL,
+  `postalCode` VARCHAR(255) NOT NULL,
+  `city` VARCHAR(255) NOT NULL,
+  `province` VARCHAR(255) NOT NULL,
+  `phone` VARCHAR(255) NOT NULL,
+  `iban` VARCHAR(255) NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `training` VARCHAR(255) NULL,
+  `instrument` VARCHAR(255) NULL,
+  `style` VARCHAR(255) NULL,
+  `number_musicians` VARCHAR(255) NULL,
+  `site` VARCHAR(255) NULL,
+  `media` VARCHAR(255) NULL,
+  PRIMARY KEY (`id`));
